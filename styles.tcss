@@ -1,0 +1,98 @@
+/* Переменные */
+$primary: #007acc;
+$accent: #00ff00;
+$surface: #161616;
+$background: #0a0a0a;
+$panel-border: #333333;
+$text: #cccccc;
+$success: #00ff00;
+
+Screen { 
+    background: $background; 
+    color: $text;
+}
+
+/* Панели */
+.panel {
+    width: 32;
+    background: $surface;
+    opacity: 1;
+    overflow: hidden;
+    transition: width 150ms linear, opacity 150ms linear;
+}
+
+.panel.hidden {
+    width: 0;
+    opacity: 0;
+}
+
+#left-panel { border-right: solid $panel-border; }
+#right-panel { border-left: solid $panel-border; padding: 1; }
+
+#center-panel { 
+    width: 1fr; 
+    background: $background; 
+}
+
+#editor-container { height: 1fr; layout: horizontal; }
+#tabs { width: 1fr; height: 1fr; }
+
+/* минимап */
+#minimap {
+    width: 24;
+    background: $background;
+    color: $text;
+    border-left: tall $panel-border;
+    transition: width 150ms linear, opacity 150ms linear;
+}
+
+#minimap.hidden { width: 0; opacity: 0; }
+
+#minimap-scroll-area {
+    height: 1fr;
+    overflow-y: scroll;
+    scrollbar-size: 0 0;
+}
+
+/* терминал */
+#bottom-panel { 
+    height: 12; 
+    background: #000; 
+    border-top: solid $panel-border; 
+}
+
+#terminal-log { 
+    width: 1fr; 
+    color: #00ff00; 
+    background: #050505; 
+}
+
+#command-input { 
+    width: 35; 
+    border-left: solid $panel-border; 
+    background: #111; 
+    color: $primary;
+}
+
+/* виджеты */
+.tool-box { 
+    background: $surface;
+    border: round $primary; 
+    margin-bottom: 1; 
+    padding: 0 1;
+}
+
+.tool-label { text-style: bold; color: $primary; padding: 1 0; }
+
+/* сб */
+#status-bar {
+    height: 1;
+    background: $surface;
+    color: $text;
+    border-top: solid $panel-border;
+    padding: 0 1;
+    transition: background 150ms linear;
+}
+
+#status-bar.saving { background: $success; color: #000; }
+
