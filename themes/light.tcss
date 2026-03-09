@@ -1,0 +1,8 @@
+/* светыч */
+$primary: #005fb8;
+$accent: #d32f2f;
+$surface: #f3f3f3;
+$background: #ffffff;
+$panel-border: #cccccc;
+$text: #202020;
+$success: #4caf50;

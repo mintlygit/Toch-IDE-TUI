@@ -1,0 +1,8 @@
+/* тёмка */
+$primary: #007acc;
+$accent: #00ff00;
+$surface: #161616;
+$background: #0a0a0a;
+$panel-border: #333333;
+$text: #cccccc;
+$success: #00ff00;
