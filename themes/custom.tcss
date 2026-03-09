@@ -1,0 +1,8 @@
+/* заготовка */
+$primary: #ff00ff;
+$accent: #00ffff;
+$surface: #1a0033;
+$background: #0d001a;
+$panel-border: #ff00ff;
+$text: #ffffff;
+$success: #ffff00;
